@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Moureen Muthama">
+    <meta name="description" content="A simple guide for beginners to learn how to care for pets like cats, dogs, and hamsters — what they eat, what they love, and how to keep them happy.">
+
+    <title>Pet Ultimate Guide</title>
+
+    <!-- favicon icon -->
+    <link rel="icon" href="images/favicon.ico.jpeg" type="image/jpeg">
+
+    <!-- linking to the main.css file -->
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to The Pet Ultimate Guide (PUG)</h1>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="/#Pets">Pets ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="dogs.html">Dogs</a></li>
+                        <li><a href="cats.html">Cats</a></li>
+                    </ul>
+                </li>
+                <li><a href="pet-products.html">Pet Products</a></li>
+                <li class="dropdown">
+                    <a href="/#blogs">Blog & Articles ▼ <abbr title="Pet Ultimate Guide">PUG</abbr></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="dog-vaccines.html">Dog Vaccines</a></li>
+                        <li><a href="pet-food-guide.html">Pet Food Guide</a></li>
+                        <li><a href="cat-hapiness.html">Cat Happiness</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact <abbr title="Pet Ultimate Guide">PUG</abbr></a></li>
+                <li><a href="FAQs.html">FAQs <abbr title="Pet Ultimate Guide">PUG</abbr></a></li>
+            </ul>
+        </nav>
+         <!-- Sign In / Sign Up Buttons -->
+    <div class="auth-buttons">
+        <button id="openSignIn">Sign In</button>
+        <button id="openSignUp">Sign Up</button>
+    </div>
+     <section class="blog-section">
+            <h2><strong>Latest Pet Articles & Tips</strong></h2>
+            <div class="blog-container">
+                <article class="blog-card">
+                    <img src="images/Sunlit Cat Relaxing.jpeg" alt="Cat relaxing" class="blog-img" width="350" height="350">
+                    <h3><strong>5 Signs Your Cat is Happy</strong></h3>
+                    <p>Cats are known for being independent, but they show affection in subtle ways. Learn how to read their body language and behaviors.</p>
+                    <a href="cat-hapiness.html" class="read-more">Read more →</a>
+                </article>
+                <article class="blog-card">
+                    <img src="images/Cartoon cute dog and cat take vaccinated rabies vector_ _ Premium Vector.jpeg" alt="Dog getting vaccinated" class="blog-img" width="350" height="350">
+                    <h3><strong>Essential Vaccines for Dogs</strong></h3>
+                    <p>From parvovirus to rabies, explore the vaccination schedule every responsible dog owner in Kenya should follow.</p>
+                    <a href="dog-vaccines.html" class="read-more">Read more →</a>
+                </article>
+                <article class="blog-card">
+                    <img src="images/10 Important Pet Food Tips to Improve Your Pet's Health!.jpeg" alt="Bowls of pet food" class="blog-img" width="350" height="350">
+                    <h3><strong>Choosing the Right Pet Food</strong></h3>
+                    <p>Understand what nutrients your pet needs and how to select food based on age, breed, and lifestyle.</p>
+                    <a href="pet-food-guide.html" class="read-more">Read more →</a>
+                </article>
+        
+    </header>
+
+    <main>
+       
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p>Copyright &copy; The PUG 2025</p>
+    </footer>
+
+    <!-- Sign In / Sign Up Modal -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="form-container">
+                <h2 id="formTitle">Sign In</h2>
+
+                <!-- Sign In Form -->
+                <form id="signInForm">
+                    <label for="signinEmail">Email:</label>
+                    <input type="email" id="signinEmail" required>
+                    <label for="signinPassword">Password:</label>
+                    <input type="password" id="signinPassword" required>
+                    <button type="submit">Sign In</button>
+                </form>
+
+                <!-- Sign Up Form (hidden by default) -->
+                <form id="signUpForm" style="display:none;">
+                    <label for="signupName">Full Name:</label>
+                    <input type="text" id="signupName" required>
+                    <label for="signupEmail">Email:</label>
+                    <input type="email" id="signupEmail" required>
+                    <label for="signupPassword">Password:</label>
+                    <input type="password" id="signupPassword" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+
+                <!-- Switch Forms -->
+                <p id="switchText">Don't have an account? <span id="switchForm" class="switch-link">Sign Up</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Linking to main.js for modal functionality -->
+    <script src="main.js"></script>
+</body>
+</html>

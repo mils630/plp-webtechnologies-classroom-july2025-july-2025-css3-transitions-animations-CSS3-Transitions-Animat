@@ -1,0 +1,333 @@
+/* ===== GLOBAL STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('images/homepage background image.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+}
+
+/* ===== NAVBAR STYLING ===== */
+nav {
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-nav li {
+  position: relative;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.main-nav a:hover {
+  color: #ffd700;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+}
+
+/* ===== DROPDOWN MENU ===== */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Positioned below the parent */
+  left: 0;
+  background-color: #444;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  min-width: 160px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.dropdown-menu li a {
+  padding: 10px 20px;
+  display: block;
+  color: #fff;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #666;
+}
+
+/* Keeps dropdown open if hovered */
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+  display: block;
+}
+
+/* Smooth animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== HEADER IMAGE ===== */
+header figure {
+  margin: 0;
+}
+
+header figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Blog Section Styling */
+.blog-section {
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.05); /* subtle background */
+}
+
+.blog-section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.blog-card {
+    background-color: rgba(255, 255, 255, 0.9); /* semi-transparent card */
+    border: 2px solid transparent; /* transparent border */
+    border-radius: 12px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border-color: rgba(0, 0, 0, 0.1); /* subtle hover border */
+}
+
+.blog-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.blog-card h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.blog-card p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.blog-card .read-more {
+    text-decoration: none;
+    color: #6c63ff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.blog-card .read-more:hover {
+    color: #5145cd;
+}
+
+.read-more {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+    .about-container {
+      max-width: 800px;
+      margin: 50px auto;
+      text-align: center;
+      color: #000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-container h1 {
+      margin-bottom: 20px;
+    }
+
+    .about-container p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+  
+    .faq-section {
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 40px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.faq-item p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.faq-item a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.faq-item a:hover {
+  text-decoration: underline;
+}
+
+/* Modal container */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Form container */
+.form-container label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-container button:hover {
+  background-color: #5145cd;
+}
+
+/* Switch link */
+.switch-link {
+  color: #6c63ff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Auth buttons on homepage */
+.auth-buttons {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.auth-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-buttons button:hover {
+  background-color: #5145cd;
+}
