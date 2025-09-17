@@ -1,66 +1,75 @@
-# 🎬 Assignment: Bringing Web Pages to Life with CSS & JavaScript
+# Pet Ultimate Guide (PUG)
 
-In this assignment, you’ll create a visually dynamic and interactive experience by combining the beauty of **CSS3 animations** with the logic and power of **JavaScript functions**. By the end, you’ll have a mini interactive experience that not only looks good—but *feels* responsive and alive!
+Welcome to **Pet Ultimate Guide (PUG)** – a comprehensive and interactive web guide for pet owners and enthusiasts. This website provides useful tips, articles, and resources for keeping your pets healthy, happy, and entertained.
 
----
+## Features
 
-## 🎨✨ Part 1: CSS3 Transitions and Animations for Dynamic Styling Effects
+- **Latest Pet Articles & Tips**: Learn about pet happiness, essential vaccines, and proper nutrition.
+- **Interactive Sign In / Sign Up Modal**: Users can create an account or log in to access personalized content.
+- **Dynamic Blog Cards**: Smooth hover effects and responsive layout for blog articles.
+- **Responsive Design**: Works on desktop and mobile devices.
+- **Beautiful CSS Animations**: Enhances user experience with transitions and hover effects.
 
-Start by enhancing elements on your page using **CSS transitions** and **keyframe animations**. You can animate things like:
+## 📁 Project Structure
 
-* Button hover effects
-* Smooth fades, slides, or transforms
-* Continuous or triggered animations using `@keyframes`
 
-**Goal:** Create a page that visually responds to user interaction and/or time-based triggers using only CSS.
 
----
+PUG/
+│
+├── index.html # Homepage
+├── about.html # About Us
+├── contact.html # Contact page
+├── FAQs.html # Frequently Asked Questions
+├── dogs.html # Dogs page
+├── cats.html # Cats page
+├── cat-hapiness.html # Cat happiness article
+├── dog-vaccines.html # Dog vaccines article
+├── pet-food-guide.html # Pet food guide article
+├── pet-products.html # Pet products page
+├── main.css # Styles for the website
+├── main.js # JavaScript for interactivity and modal
+└── images/ # Folder containing all images and icons
 
-## 📚✨ Part 2: JavaScript Functions — Scope, Parameters & Return Values
 
-Now it’s time to dive deeper into how **functions** actually work. In this section:
+## Technologies Used
 
-* Write several custom functions that take in **parameters** and return **useful values**
-* Demonstrate understanding of **local vs global scope**
-* Show how functions can be reused to control animation, trigger DOM changes, or calculate values
+- HTML5
+- CSS3 (including transitions and keyframe animations)
+- JavaScript (functions, DOM manipulation)
+- Git & GitHub (version control and deployment)
 
-**Goal:** Show functional thinking by building small, reusable pieces of logic that clearly use parameters, return values, and demonstrate scope awareness.
+## Features in Detail
 
----
+1. **Sign In / Sign Up Modal**
+   - Click “Sign In” or “Sign Up” buttons on the homepage.
+   - Smooth toggle between forms.
+   - Basic validation and password show/hide functionality.
 
-## 🎨🎬 Part 3: Combining CSS Animations with JavaScript
+2. **Blog Section**
+   - Cards with transparent borders.
+   - Hover effects: subtle lift, shadow, and border highlight.
+   - Read more links for detailed articles.
 
-Here’s the real magic—combine the two worlds!
+3. **Responsive Layout**
+   - Flexbox-based layout for blog cards.
+   - Works on various screen sizes.
 
-Use JavaScript to **trigger** CSS animations dynamically. Think along the lines of:
+## How to Run
 
-* A button that animates a box when clicked
-* A card flip animation on hover or click
-* A loading animation that starts/stops based on user input
-* A popup/modal that slides in and fades out based on events
+1. Clone the repository:
 
-**Goal:** Use JavaScript to **add/remove classes** or modify styles dynamically to trigger CSS animations. Bonus if you make it reusable with functions!
+```bash
+git clone https://github.com/mils630/PUG.git
 
----
 
-## Deliverables
+Open index.html in your preferred browser.
 
-Submit a project folder that includes:
+Enjoy the interactive features and browse through articles!
 
-* `index.html` — Your structured content
-* `styles.css` — All your transitions and keyframe animations
-* `script.js` — Your functional logic demonstrating scope, parameters, return values, and animation triggers
+Contact
 
-Each part of the assignment should be clearly labeled and commented to show your understanding.
+For questions, suggestions, or feedback, reach out via:
 
----
+Email: milanmutheu1@gmail.com
 
-## Outcome
-
-You’ll be evaluated on:
-
-* Use of CSS transitions and animations to enhance UI
-* Quality and clarity of JavaScript functions (with parameters and return values)
-* Effective integration of CSS and JS for interactive effects
-* Code readability, modularity, and documentation
-* Creativity and user experience
+GitHub: mils630
