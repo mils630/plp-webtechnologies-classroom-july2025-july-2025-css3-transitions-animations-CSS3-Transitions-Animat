@@ -2,6 +2,8 @@
 
 Welcome to **Pet Ultimate Guide (PUG)** – a comprehensive and interactive web guide for pet owners and enthusiasts. This website provides useful tips, articles, and resources for keeping your pets healthy, happy, and entertained.
 
+Here is the link to the deployed website: https://pug-2nba.vercel.app/
+
 ## Features
 
 - **Latest Pet Articles & Tips**: Learn about pet happiness, essential vaccines, and proper nutrition.
